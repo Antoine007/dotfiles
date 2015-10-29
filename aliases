@@ -3,5 +3,19 @@ alias ip="curl ipinfo.io/ip"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
 
+
+alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
+alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+
+
+alias code="cd ~/code"
+alias dis="cd ~/code/disfrutas"
+
+alias heal="cd ~/code/S2H”
+alias work="cd ~/code/sign2pay”
+alias hancock="cd ~/code/hancock; source environment.sh; python application.py;"
+alias hancock_authature="cd ~/code/hancock; source environment_authature.sh; python application.py;"
+
+
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)

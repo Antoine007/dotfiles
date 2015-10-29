@@ -14,6 +14,7 @@
 [core]
   pager = less -FRSX
 	editor = '/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n -w
+	excludesfile = /Users/antoinemagny/.gitignore_global
 
 [alias]
   co = checkout
@@ -50,4 +51,14 @@
   mergeoptions = --no-edit
 [user]
 	email = mr.magny+github@gmail.com
-	name = Antoine Magny
+	name = antoine magny
+[filter "lfs"]
+	clean = git lfs clean %f
+	smudge = git lfs smudge %f
+	required = true
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/SourceTree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true

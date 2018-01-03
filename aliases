@@ -3,7 +3,6 @@ alias ip="curl ipinfo.io/ip"
 alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
 
-
 alias show_all="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
 alias hide_all="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
 
@@ -14,7 +13,6 @@ alias origin="cd ~/code/sourceX"
 alias gz="cd ~/code/sourceX"
 alias pierrer="cd ~/code/pierre_sang_reminder"
 alias pierre="cd ~/code/pierre_sang"
-alias ut="cd ~/code/ultimos_static"
 alias ut="cd ~/code/ultimos_static"
 alias wind="cd ~/code/kitespots"
 alias blog="cd ~/code/blog"
@@ -30,5 +28,4 @@ alias gc='git commit -m’
 alias gd='git diff'
 alias go='git checkout ’
 
-# Quickly serve the current directory as HTTP
-alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)
+alias processes='ps -ef | grep’

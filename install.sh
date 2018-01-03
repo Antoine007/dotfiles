@@ -50,7 +50,7 @@ if [[ ! `uname` =~ "darwin" ]]; then
   echo 'export BUNDLER_EDITOR="subl $@ >/dev/null 2>&1 &|"' >> zshrc
 else
   git config --global core.editor "'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl' -n -w"
-  bundler_editor="'/Applications/Sublime Text 2.app/Contents/SharedSupport/bin/subl'"
+  bundler_editor="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl'"
   echo "export BUNDLER_EDITOR=\"${bundler_editor}\"" >> zshrc
 fi
 

@@ -23,3 +23,8 @@ $ zsh install.sh
 ```
 
 You're all set! Go back to [lewagon/setup](https://github.com/lewagon/setup)
+
+
+
+Speed up your Workflow with Aliases
+

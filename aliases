@@ -4,18 +4,31 @@ alias ips="ifconfig -a | perl -nle'/(\d+\.\d+\.\d+\.\d+)/ && print $1'"
 alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/downloads/test10.zip"
 
 
-alias showFiles='defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app'
-alias hideFiles='defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app'
+alias show_all="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
+alias hide_all="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
 
-
+# watch for the quote style (copy paste it)
 alias code="cd ~/code"
-alias dis="cd ~/code/disfrutas"
 
-alias heal="cd ~/code/S2H”
-alias work="cd ~/code/sign2pay”
-alias hancock="cd ~/code/hancock; source environment.sh; python application.py;"
-alias hancock_authature="cd ~/code/hancock; source environment_authature.sh; python application.py;"
+alias origin="cd ~/code/sourceX"
+alias gz="cd ~/code/sourceX"
+alias pierrer="cd ~/code/pierre_sang_reminder"
+alias pierre="cd ~/code/pierre_sang"
+alias ut="cd ~/code/ultimos_static"
+alias ut="cd ~/code/ultimos_static"
+alias wind="cd ~/code/kitespots"
+alias blog="cd ~/code/blog"
+alias gold="cd ~/code/Autorama/goldmine"
 
+alias python="python3"
+alias activate= "source env/bin/activate"
+
+alias gs='git status '
+alias ga='git add '
+alias gb='git branch '
+alias gc='git commit -m’
+alias gd='git diff'
+alias go='git checkout ’
 
 # Quickly serve the current directory as HTTP
 alias serve='ruby -run -e httpd . -p 8000'  # Or python -m SimpleHTTPServer :)

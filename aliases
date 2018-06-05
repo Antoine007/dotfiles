@@ -6,26 +6,47 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 alias show_all="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
 alias hide_all="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
 
-# watch for the quote style (copy paste it)
-alias code="cd ~/code"
-
-alias origin="cd ~/code/sourceX"
-alias gz="cd ~/code/sourceX"
-alias pierrer="cd ~/code/pierre_sang_reminder"
-alias pierre="cd ~/code/pierre_sang"
-alias ut="cd ~/code/ultimos_static"
-alias wind="cd ~/code/kitespots"
-alias blog="cd ~/code/blog"
-alias gold="cd ~/code/Autorama/goldmine"
-
+alias foreman="foreman start -f Procfile.dev"
+alias processes="ps -ef | grep"
+alias brewu="brew update && brew upgrade && brew cleanup"
 alias python="python3"
 alias activate= "source env/bin/activate"
 
-alias gs='git status '
-alias ga='git add '
-alias gb='git branch '
-alias gc='git commit -m’
-alias gd='git diff'
-alias go='git checkout ’
+alias ga="git add . "
+alias gc="git commit -m "
+alias gp="git push "
+alias gpull="git pull "
 
-alias processes='ps -ef | grep’
+alias gs="git status "
+alias gb="git branch "
+alias gd="git diff "
+alias gco="git checkout "
+
+alias hr="heroku run "
+alias hrc="heroku run rails console "
+alias hlt="heroku logs -t "
+alias hl="heroku logs "
+
+
+# watch for the quote style (copy paste it)
+alias root="cd ~/code"
+alias learn="cd ~/code/learning"
+
+alias grow="cd ~/code/growingz"
+alias growa="cd ~/code/growingz_app"
+alias pierre="cd ~/code/pierre"
+alias pierrer="cd ~/code/pierre-sang-reminder"
+
+alias gold="cd ~/code/Autorama/goldmine"
+alias mine="cd ~/code/Autorama/goldmine"
+alias rush="cd ~/code/Autorama/goldrush_form"
+alias stat="cd ~/code/Autorama/goldstats"
+alias store="cd ~/code/Autorama/storefront"
+alias auto="cd ~/code/Autorama"
+
+
+
+alias rs="rails s"
+alias rc="rails console"
+
+alias ys="yarn start"

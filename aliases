@@ -9,13 +9,18 @@ alias hide_all="defaults write com.apple.finder AppleShowAllFiles NO; killall Fi
 alias foreman="foreman start -f Procfile.dev"
 alias processes="ps -ef | grep"
 alias brewu="brew update && brew upgrade && brew cleanup"
-alias python="python3"
+alias yarnu="yarn global upgrade"
 alias activate= "source env/bin/activate"
 
 alias ga="git add . "
 alias gc="git commit -m "
 alias gp="git push "
 alias gpull="git pull "
+alias gfa="git fetch --all "
+alias tag="git tag -a " 
+alias gri="git rebase -i "
+alias gr="git rebase " 
+# `$ tag v1.0 -m "versions 1.0"` will create a tag 
 
 alias gs="git status "
 alias gb="git branch "
@@ -30,6 +35,7 @@ alias hl="heroku logs "
 
 # watch for the quote style (copy paste it)
 alias root="cd ~/code"
+alias geek="cd ~/code"
 alias learn="cd ~/code/learning"
 
 alias grow="cd ~/code/growingz"
@@ -44,7 +50,7 @@ alias stat="cd ~/code/Autorama/goldstats"
 alias store="cd ~/code/Autorama/storefront"
 alias auto="cd ~/code/Autorama"
 
-
+alias so="cd ~/code/so"
 
 alias rs="rails s"
 alias rc="rails console"

@@ -3,3 +3,9 @@
 
 # Figaro gem
 config/application.yml
+config/secrets.yml
+
+env
+env.production
+
+node_modules

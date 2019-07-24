@@ -2,11 +2,11 @@ ZSH=$HOME/.oh-my-zsh
 
 # You can change the theme with another one:
 #   https://github.com/robbyrussell/oh-my-zsh/wiki/themes
-# ZSH_THEME="af-magic"
-ZSH_THEME="robbyrussell"
+ZSH_THEME="af-magic"
+# ZSH_THEME="robbyrussell"
 
 # Useful plugins for Rails development with Sublime Text
-plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting history-substring-search)
+plugins=(rbenv git node bundler osx rake ruby python gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search)
 
 # my old settings:
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/ those upthere +
@@ -14,6 +14,7 @@ plugins=(gitfast last-working-dir common-aliases sublime zsh-syntax-highlighting
 # source $ZSH/oh-my-zsh.sh
 # export PATH='/usr/local/bin:/usr/local/share:/usr/bin:/bin:/usr/sbin:/sbin:/usr/local/bin:/usr/local/sbin:/usr/local/share/npm/bin:/usr/X11/bin:/usr/texbin:~/bin'
 # export PATH="$(brew --prefix qt@5.5)/bin:$PATH"
+
 
 # Prevent Homebrew from reporting - https://github.com/Homebrew/brew/blob/master/share/doc/homebrew/Analytics.md
 export HOMEBREW_NO_ANALYTICS=1
@@ -37,4 +38,17 @@ export PATH="./bin:./node_modules/.bin:${PATH}:/usr/local/sbin"
 # Encoding stuff for the terminal
 export LANG=en_US.UTF-8
 export LC_ALL=en_US.UTF-8
-export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+
+export NVM_DIR="$HOME/.nvm"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# tabtab source for serverless package
+# uninstall by removing these lines or running `tabtab uninstall serverless`
+[[ -f /Users/antoine.magny/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh ]] && . /Users/antoine.magny/.config/yarn/global/node_modules/tabtab/.completions/serverless.zsh
+# tabtab source for sls package
+# uninstall by removing these lines or running `tabtab uninstall sls`
+[[ -f /Users/antoine.magny/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh ]] && . /Users/antoine.magny/.config/yarn/global/node_modules/tabtab/.completions/sls.zsh
+# tabtab source for slss package
+# uninstall by removing these lines or running `tabtab uninstall slss`
+[[ -f /Users/antoine.magny/.config/yarn/global/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/antoine.magny/.config/yarn/global/node_modules/tabtab/.completions/slss.zsh

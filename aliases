@@ -56,3 +56,5 @@ alias rs="rails s"
 alias rc="rails console"
 
 alias ys="yarn start"
+
+alias emulator="~/Library/Android/sdk/emulator/emulator -avd Pixel_3_API_28"

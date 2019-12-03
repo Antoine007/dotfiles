@@ -49,7 +49,7 @@
 [branch "master"]
   mergeoptions = --no-edit
 [user]
-	email = mr.magny@gmail.com
+	email = mr.magny+github@gmail.com
 	name = antoine
 [filter "lfs"]
 	clean = git lfs clean %f

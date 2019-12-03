@@ -52,3 +52,5 @@ export NVM_DIR="$HOME/.nvm"
 # tabtab source for slss package
 # uninstall by removing these lines or running `tabtab uninstall slss`
 [[ -f /Users/antoine/.config/yarn/global/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/antoine/.config/yarn/global/node_modules/tabtab/.completions/slss.zsh
+
+export EDITOR="code --wait"

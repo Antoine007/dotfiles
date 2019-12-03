@@ -6,26 +6,36 @@ alias speedtest="wget -O /dev/null http://speedtest.wdc01.softlayer.com/download
 alias show_all="defaults write com.apple.finder AppleShowAllFiles YES; killall Finder /System/Library/CoreServices/Finder.app"
 alias hide_all="defaults write com.apple.finder AppleShowAllFiles NO; killall Finder /System/Library/CoreServices/Finder.app"
 
-alias foreman="foreman start -f Procfile.dev"
+alias fo="foreman start -f Procfile.dev"
+alias myfo="foreman start -f MyProcfile.dev"
 alias processes="ps -ef | grep"
 alias brewu="brew update && brew upgrade && brew cleanup"
 alias yarnu="yarn global upgrade"
+alias yu="yarn global upgrade"
 alias activate= "source env/bin/activate"
 
-alias ga="git add . "
-alias gc="git commit -m "
-alias gp="git push "
-alias gpull="git pull "
-alias gfa="git fetch --all "
-alias tag="git tag -a " 
-alias gri="git rebase -i "
-alias gr="git rebase " 
-# `$ tag v1.0 -m "versions 1.0"` will create a tag 
-
 alias gs="git status "
+alias gl="git log --oneline"
 alias gb="git branch "
 alias gd="git diff "
 alias gco="git checkout "
+alias ga="git add . "
+alias gc="git commit -m "
+alias g="git add . && git commit"
+alias gm="git add . && git commit -m "
+alias gp="git push "
+alias gpull="git pull "
+alias gfa="git fetch --all "
+alias amend="git commit --amend"
+alias edit="git commit --amend"
+alias commit="git commit"
+
+alias gri="git rebase -i "
+alias gr="git rebase "
+
+alias tag="git tag -a "
+# `$ tag v1.0 -m "versions 1.0"` will create a tag
+
 
 alias hr="heroku run "
 alias hrc="heroku run rails console "
@@ -50,7 +60,10 @@ alias stat="cd ~/code/Autorama/goldstats"
 alias store="cd ~/code/Autorama/storefront"
 alias auto="cd ~/code/Autorama"
 
-alias so="cd ~/code/so"
+alias breathe="cd ~/code/breathe"
+alias breath="cd ~/code/breathe"
+alias b="cd ~/code/breathe"
+alias core="cd ~/code/breathe/core"
 
 alias rs="rails s"
 alias rc="rails console"

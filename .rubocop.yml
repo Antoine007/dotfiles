@@ -1,20 +1,13 @@
-# docs:
-# http://rubocop.readthedocs.io/en/latest/cops_style/
-# https://github.com/bbatsov/rubocop/blob/master/config/default.yml
+AllCops:
+  TargetRubyVersion: 2.6
+
 Metrics/LineLength:
-  Max: 99
+  Max: 100
+Metrics/MethodLength:
+  Max: 20
 
-Documentation:
+Style/Documentation:
   Enabled: false
 
-StringLiterals:
+Style/StringLiterals:
   EnforcedStyle: double_quotes
-
-Style/SymbolArray:
-  Enabled: false
-
-Style/EmptyMethod:
-  EnforcedStyle: expanded
-
-Style/ClassAndModuleChildren:
-  EnforcedStyle: compact

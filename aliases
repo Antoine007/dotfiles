@@ -48,22 +48,6 @@ alias root="cd ~/code"
 alias geek="cd ~/code"
 alias learn="cd ~/code/learning"
 
-alias grow="cd ~/code/growingz"
-alias growa="cd ~/code/growingz_app"
-alias pierre="cd ~/code/pierre"
-alias pierrer="cd ~/code/pierre-sang-reminder"
-
-alias gold="cd ~/code/Autorama/goldmine"
-alias mine="cd ~/code/Autorama/goldmine"
-alias rush="cd ~/code/Autorama/goldrush_form"
-alias stat="cd ~/code/Autorama/goldstats"
-alias store="cd ~/code/Autorama/storefront"
-alias auto="cd ~/code/Autorama"
-
-alias breathe="cd ~/code/breathe"
-alias breath="cd ~/code/breathe"
-alias b="cd ~/code/breathe"
-alias core="cd ~/code/breathe/core"
 
 alias rs="rails s"
 alias rc="rails console"

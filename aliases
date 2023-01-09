@@ -55,3 +55,6 @@ alias rc="rails console"
 alias ys="yarn start"
 
 alias emulator="~/Library/Android/sdk/emulator/emulator -avd Pixel_3_API_28"
+
+alias python="python3"
+alias pip="pip3"

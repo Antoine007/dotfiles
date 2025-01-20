@@ -53,5 +53,6 @@ export NVM_DIR="$HOME/.nvm"
 # uninstall by removing these lines or running `tabtab uninstall slss`
 [[ -f /Users/antoine/.config/yarn/global/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/antoine/.config/yarn/global/node_modules/tabtab/.completions/slss.zsh
 
-export EDITOR="code --wait"
-export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"
+export EDITOR="cursor --wait"
+
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh

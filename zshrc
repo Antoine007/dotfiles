@@ -6,7 +6,7 @@ ZSH_THEME="af-magic"
 # ZSH_THEME="robbyrussell"
 
 # Useful plugins for Rails development with Sublime Text
-plugins=(rbenv git node bundler osx rake ruby python gitfast last-working-dir common-aliases zsh-syntax-highlighting history-substring-search)
+plugins=(rbenv git node bundler macos rake ruby python gitfast last-working-dir common-aliases history-substring-search)
 
 # my old settings:
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/ those upthere +

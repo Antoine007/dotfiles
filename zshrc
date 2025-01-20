@@ -54,3 +54,4 @@ export NVM_DIR="$HOME/.nvm"
 [[ -f /Users/antoine/.config/yarn/global/node_modules/tabtab/.completions/slss.zsh ]] && . /Users/antoine/.config/yarn/global/node_modules/tabtab/.completions/slss.zsh
 
 export EDITOR="code --wait"
+export BUNDLER_EDITOR="'/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -a"

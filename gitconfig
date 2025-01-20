@@ -11,7 +11,7 @@
 
 [core]
   pager = less -FRSX
-	editor = code --wait
+	editor = '/Applications/Sublime Text.app/Contents/SharedSupport/bin/subl' -n -w
 	excludesfile = /Users/antoine.magny/.gitignore_global
 
 [alias]
@@ -52,7 +52,7 @@
   mergeoptions = --no-edit
 [user]
 	email = mr.magny+github@gmail.com
-	name = Antoine
+	name = Antoine Magny
 [filter "lfs"]
 	clean = git lfs clean %f
 	smudge = git lfs smudge %f
